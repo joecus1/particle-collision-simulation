@@ -9,7 +9,8 @@ class Renderer:
         self.surface.fill(BLACK)
         for particle in particles:
             center = (particle.x, particle.y)
-            pg.draw.circle(self.surface, GREEN, center, PARTICLE_SIZE)
+            color = particle.color
+            pg.draw.circle(self.surface, color, center, PARTICLE_SIZE)
 
         pg.display.update()
 

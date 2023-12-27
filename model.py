@@ -9,6 +9,9 @@ class Particle:
         self.vy = 1 - 2 * random.random()
         self.prev_collision = None
 
+        colors = [WHITE, BLUE, GREEN, RED]
+        self.color = colors[random.randint(0,3)]
+
     def calculate_distance(self, p1_x, p1_y, p2_x, p2_y):
         return math.sqrt(math.pow((p1_x - p2_x), 2) + math.pow((p1_y - p2_y), 2))
 
