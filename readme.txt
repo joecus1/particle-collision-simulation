@@ -1,0 +1,1 @@
+This is a small program to simulate elastic collsions of particles with uniform mass.
